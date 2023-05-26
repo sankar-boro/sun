@@ -1,4 +1,5 @@
 mod try_join;
+mod future;
 
 use hyper::{Client, client::HttpConnector, Uri};
 use hyper::body::HttpBody as _;

@@ -9,6 +9,10 @@ edition = "2021"
 name="server"
 path="src/server.rs"
 
+[[bin]]
+name="future"
+path="src/future.rs"
+
 [dependencies]
 axum = "0.6.18"
 serde = { version = "1.0.163", features = ["derive"] }
