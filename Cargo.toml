@@ -13,6 +13,10 @@ path="src/server.rs"
 name="future"
 path="src/future.rs"
 
+[[bin]]
+name="runtime"
+path="src/runtime.rs"
+
 [dependencies]
 axum = "0.6.18"
 serde = { version = "1.0.163", features = ["derive"] }
