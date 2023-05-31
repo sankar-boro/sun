@@ -21,6 +21,10 @@ path="src/runtime.rs"
 name="channels"
 path="src/channels.rs"
 
+[[bin]]
+name="thread"
+path="src/thread.rs"
+
 [dependencies]
 axum = "0.6.18"
 serde = { version = "1.0.163", features = ["derive"] }

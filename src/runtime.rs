@@ -75,8 +75,14 @@ const VTABLE: RawWakerVTable = RawWakerVTable::new(clone_waker, wake, wake_by_re
 
 // Example usage
 
+async fn do_something() -> String {
+    "sankar".to_string()
+}
+
 async fn async_task() {
     println!("Starting async task");
+    let d = do_something().await;
+    println!("{}", d);
     // Simulating some asynchronous work
     // tokio::time::sleep(std::time::Duration::from_secs(1)).await;
     println!("Async task completed");
